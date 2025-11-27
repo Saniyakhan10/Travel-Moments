@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Moments</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+        }
+        
+        .parent1 {
+            width: 100%;
+            display: flex;
+        }
+        
+        .parent2 {
+            width: 40%;
+            height: 100vh;
+            background-color: red;
+            background-image: url(imgi_2_bg.jpeg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+        
+        .parent2 h2 {
+            font-size: 2.1rem;
+            color: #C58255;
+            position: absolute;
+            left: 13rem;
+            top: 7.5rem;
+        }
+        
+        .parent2 p {
+            margin: 0px 60px;
+            color: white;
+            text-align: right;
+            position: absolute;
+            left: 7rem;
+            top: 11rem;
+            line-height: 1.4;
+            font-size: 1.1rem;
+            word-spacing: 1px;
+        }
+        
+        .parent3 {
+            background-color: #001F20;
+            width: 60%;
+            text-align: right;
+        }
+        
+        .parent3 .child1 a {
+            text-transform: uppercase;
+            color: white;
+            text-decoration: none;
+            position: relative;
+            top: 4rem;
+            right: 11rem;
+            padding: 23px;
+            font-weight: 500;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+        
+        .parent3 .child1 a:hover {
+            background-color: #C58255;
+            border-start-end-radius: 40%;
+            border-bottom-left-radius: 30%;
+            transform: scale(1.5);
+        }
+        
+        .parent3 .child2 h1 {
+            position: relative;
+            top: 8rem;
+            right: 11rem;
+            color: #C58255;
+            font-size: 3rem;
+        }
+        
+        .parent3 .child2 h2 {
+            position: relative;
+            top: 7.4rem;
+            right: 11rem;
+            color: white;
+            font-weight: 400;
+            font-size: 1.3rem;
+        }
+        
+        .parent3 .child2 p {
+            position: relative;
+            top: 9rem;
+            left: 6.5rem;
+            color: white;
+            max-width: 68%;
+            line-height: 1.6rem;
+            font-size: 1.1rem;
+        }
+        
+        .parent3 .parent4 .b1 {
+            padding: 14px 30px;
+            background-color: #C58255;
+            color: black;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .parent3 .parent4 .b2 {
+            padding: 15px 16px;
+            font-size: 0.9rem;
+            background: none;
+            border: 1.5px solid #C58255;
+            color: #C58255;
+            text-decoration-line: underline;
+            cursor: pointer;
+        }
+        
+        .parent3 .parent4 {
+            display: flex;
+            justify-content: flex-end;
+            gap: 1rem;
+            align-items: center;
+            margin-bottom: 1rem;
+            position: relative;
+            right: 11rem;
+            top: 10rem;
+        }
+        
+        .parent3 .parent5 {
+            display: flex;
+            gap: 1.4rem;
+            position: relative;
+            top: 11rem;
+            left: 36rem;
+        }
+        
+        .parent3 .parent5 i {
+            font-size: 1.4rem;
+            color: white;
+            text-decoration: underline;
+            text-decoration-color: blue;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+        
+        .parent3 .parent5 i:hover {
+            color: #C58255;
+            transform: scale(1.1);
+        }
+        
+        .img1 {
+            position: absolute;
+            z-index: 3;
+            top: 19.5rem;
+            left: 23rem;
+        }
+        
+        .img1 img {
+            width: 27rem;
+        }
+        
+        footer {
+            background-color: #1A1A1A;
+            height: 12rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        footer .c1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 1.6rem;
+            font-size: 0.8rem;
+        }
+        
+        .c1 h2 {
+            color: #7FFFD4;
+            font-weight: 500;
+        }
+        
+        .c1 h3 {
+            color: #F1F1F1;
+            font-weight: 300;
+        }
+        
+        .c2 {
+            margin-top: 0.9rem;
+            font-size: 0.9rem;
+        }
+        
+        .c2 a {
+            text-decoration: none;
+            padding: 0.5rem;
+            color: #F1F1F1;
+        }
+        
+        .c2 a:hover {
+            color: #7FFFBC;
+        }
+        
+        .c3 {
+            display: flex;
+            gap: 1rem;
+            font-size: 1.3rem;
+            margin-top: 1.2rem;
+            color: white;
+        }
+        
+        .c3 i {
+            text-decoration: underline;
+            text-decoration-color: white;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+        
+        .c3 i:hover {
+            color: #7FFFBC;
+            transform: scale(1.1);
+        }
+        
+        .c4 {
+            margin-top: 0.9rem;
+            font-size: 0.8rem;
+            color: #AAAAAA;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent1">
+        <div class="parent2">
+
+            <h2>Best guide for you</h2>
+            <p>
+                Our team of experts has scoured collection of handpicked destinations and insider tips to ensure your journey is extraordinary.
+            </p>
+        </div>
+        <div class="parent3">
+            <div class="child1">
+                <a href="#">Home</a>
+                <a href="#">about us</a>
+                <a href="#">contact</a>
+                <a href="#">login</a>
+                <a href="#">register</a>
+            </div>
+            <div class="child2">
+                <h1>ENJOY</h1>
+                <h2>Travelling moment in Balaghat</h2>
+                <p>
+                    Welcome to our travel website, where we pride ourselves on being the best guide for you in your wanderlust adventures. Whether you're seeking sun-soaked beaches, or thrilling outdoor escapades, we've got you covered.
+                </p>
+                <div class="parent4">
+                    <button class="b1">Explore</button>
+                    <a href="https://www.google.com/search?gs_ssp=eJzj4tTP1TcwTypLsTBg9OJISsxJTM9ILAEAQaUGcQ&q=balaghat&rlz=1C1SLLM_en-GBIN1119IN1119&oq=balag&gs_lcrp=EgZjaHJvbWUqCggBEC4YsQMYgAQyBggAEEUYOTIKCAEQLhixAxiABDIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIGCAYQRRg9MgYIBxBFGD3SAQg2OTkwajBqN6gCALACAA&sourceid=chrome&ie=UTF-8"
+                        target="_blank"><button class="b2">See More</button></a>
+                </div>
+                <div class="parent5">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="img1"><img src="imgi_1_women-removebg-preview.png" alt=""></div>
+    <footer>
+        <div class="c1">
+            <h2>Techno Soft</h2>
+            <h3>Your Travel Companion</h3>
+        </div>
+        <div class="c2">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+            <a href="#">E-Ticket</a>
+            <a href="#">Journey</a>
+        </div>
+        <div class="c3">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+        <div class="c4">&copy 2025 Techno Soft. All rights reserved.</div>
+
+    </footer>
+</body>
+
+</html>
+
+</html>
+
+</html>
